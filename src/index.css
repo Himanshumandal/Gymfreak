@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-gray-20: #F8F4EB;
+  --color-gray-50: #EFE6E6;
+  --color-gray-100: #DFCCCC;
+  --color-gray-500: #5E0000;
+
+  --color-primary-100: #FFE1E0;
+  --color-primary-300: #FFA6A3;
+  --color-primary-500: #FF6B66;
+
+  --color-secondary-400: #FFCD5B;
+  --color-secondary-500: #FFC132;
+
+  --font-dmsans: "DM Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --breakpoint-xs: 30rem;
+  --breakpoint-sm: 48rem;
+  --breakpoint-md: 66.25rem;
+}
+
+@utility bg-gradient-yellowred {
+  background-image: linear-gradient(90deg, #FF616A 0%, #FFC837 100%);
+}
+
+@utility bg-mobile-home {
+  background-image: url("./assets/HomePageGraphic.png");
+}
+
+@utility content-evolvetext {
+  content: url("./assets/EvolveText.png");
+}
+
+@utility content-abstractwaves {
+  content: url("./assets/AbstractWaves.png");
+}
+
+@utility content-sparkles {
+  content: url("./assets/Sparkles.png");
+}
+
+@utility content-circles {
+  content: url("./assets/Circles.png");
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  @apply text-gray-500;
+}
